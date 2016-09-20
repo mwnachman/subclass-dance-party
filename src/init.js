@@ -27,7 +27,7 @@ $(document).ready(function() {
     var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
-      Math.random() * 1000
+      Math.random() * 1000, 'orange'
     );
 
 
@@ -36,4 +36,5 @@ $(document).ready(function() {
 
   });
 });
+
 
