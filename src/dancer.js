@@ -3,7 +3,9 @@
 var makeDancer = function(top, left, timeBetweenSteps) {
 
   // use jQuery to create an HTML <span> tag
-  this.$node = $('<span class="dancer"></span>');
+  var STH = "'Assets/orangefish.png'";
+  var currFish = '<img class="dancer" src= ' + STH + '/>';
+  this.$node = $(currFish);
   this.timeBetweenSteps = timeBetweenSteps;
 
   this.step();
@@ -26,7 +28,7 @@ makeDancer.prototype.setPosition = function(top, left) {
     // where it belongs on the page. See http://api.jquery.com/css/
   var styleSettings = {
     top: top,
-    left: left
+    left: left,
   };
 
   this.$node.css(styleSettings);
